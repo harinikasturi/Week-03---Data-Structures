@@ -1,0 +1,14 @@
+public class StringBufferConcatenate {
+    public static String concatenateStrings(String[] strings) {
+        StringBuffer sb = new StringBuffer();
+        for (String str : strings) {
+            sb.append(str);
+        }
+        return sb.toString();
+    }
+
+    public static void main(String[] args) {
+        String[] words = {"Hello", " ", "World", "!"};
+        System.out.println("Concatenated: " + concatenateStrings(words));
+    }
+}
